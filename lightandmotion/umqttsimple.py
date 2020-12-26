@@ -1,3 +1,6 @@
+# Copied from https://github.com/RuiSantosdotme/ESP-MicroPython
+# Although here pycom subsequently have copyrighted the code and added a gpl license https://github.com/pycom/pycom-libraries/blob/bb7ac5032d0e448ba7d09d767400b0ea9bbf38ae/examples/mqtt/mqtt.py#L15
+# I am not a lawyer, and do not know the subtleties of when a gpl license may be post-dated.
 try:
     import usocket as socket
 except:
