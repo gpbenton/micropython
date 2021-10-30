@@ -3,14 +3,14 @@ import machine
 from machine import Pin
 from secrets import broker
 import ubinascii
-from umqttsimple import MQTTClient
+import umqtt.simple
 import time
 import network
 
 from led import led
 
 def connect(client_id, broker):
-  client = MQTTClient(client_id, broker)
+  client = umqtt.simple.MQTTClient(client_id, broker, keepalive=60)
   print ("Connecting to " + broker)
   client.connect()
   return client
